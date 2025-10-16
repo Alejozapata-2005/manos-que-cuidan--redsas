@@ -1,57 +1,28 @@
 /* style.css - Versión adaptada con paleta ejecutiva */
 
 /* Importar Google Fonts para tipografía moderna */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
 
 /* Variables CSS para la paleta ejecutiva */
 :root {
-  --primary-color: #FF7E67; /* Coral suave para CTAs */
-  --secondary-color: #4A90E2; /* Azul cielo para profesionalismo */
-  --accent-color: #7ED6A5; /* Verde menta para bienestar */
-  --background-color: #F2F2F2; /* Gris claro para fondo */
-  --text-color: #2C3E50; /* Gris oscuro para texto */
+  --primary-color: #ff7e67; /* Coral suave para CTAs */
+  --secondary-color: #4a90e2; /* Azul cielo para profesionalismo */
+  --accent-color: #7ed6a5; /* Verde menta para bienestar */
+  --background-color: #f2f2f2; /* Gris claro para fondo */
+  --text-color: #2c3e50; /* Gris oscuro para texto */
   --light-text: #666; /* Texto secundario */
   --white: #fff;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --transition-speed: 0.3s;
   --border-radius: 10px;
-  --font-base: 'Roboto', sans-serif;
+  --font-base: "Roboto", sans-serif;
   --font-size-base: 16px;
   --font-size-h1: 36px;
   --font-size-h2: 28px;
   --font-size-h3: 22px;
 }
 
-/* Soporte para modo oscuro
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #000000;
-    --text-color: #000000;
-    --light-text: #aaa;
-    --shadow-color: rgba(255, 255, 255, 0.1);
-  }
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  .top-bar {
-    background-color: #121212;
-  }
-  .main-header {
-    background-color: #1e1e1e;
-  }
-  .card {
-    background: #252525;
-  }
-  footer {
-    background-color: #121212;
-  }
-  .form-card input {
-    background-color: #333;
-    border-color: #444;
-    color: var(--text-color);
-  }
-} */
+/* Modo oscuro eliminado */
 
 /* Reset y estilos base */
 * {
@@ -90,8 +61,12 @@ input:focus {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .top-bar-left span {
@@ -109,7 +84,8 @@ input:focus {
 .top-bar-right a {
   color: var(--white);
   margin-left: 10px;
-  transition: color var(--transition-speed) ease, transform var(--transition-speed) ease;
+  transition: color var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
 }
 
 .top-bar-right a:hover {
@@ -161,7 +137,7 @@ input:focus {
 }
 
 .nav-menu li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -188,7 +164,8 @@ input:focus {
   border-radius: var(--border-radius);
   text-decoration: none;
   font-weight: 500;
-  transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+  transition: background-color var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
 }
 
 .login-btn .btn:hover {
@@ -206,13 +183,17 @@ input:focus {
 }
 
 .hero-slider::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
 }
 
 .overlay-content {
@@ -222,7 +203,7 @@ input:focus {
   padding: 20px;
   border-radius: var(--border-radius);
   transform: translateY(20px);
-  
+
   opacity: 0;
   animation: slideUp 1s forwards 0.5s;
 }
@@ -260,7 +241,7 @@ input:focus {
 }
 
 .content-section h2::after {
-  content: '';
+  content: "";
   display: block;
   width: 50px;
   height: 3px;
@@ -283,13 +264,14 @@ input:focus {
   box-shadow: 0 4px 6px var(--shadow-color);
   padding: 20px;
   text-align: center;
-  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  transition: transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
   overflow: hidden;
   position: relative;
 }
 
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -346,13 +328,14 @@ input:focus {
   text-decoration: none;
   font-weight: 500;
   margin-top: 10px;
-  transition: background-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  transition: background-color var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
 }
 
 .btn:hover,
 .btn1:hover {
   background-color: #e66450; /* Coral más oscuro */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn1 {
@@ -360,7 +343,7 @@ input:focus {
 }
 
 .btn1:hover {
-  background-color: #357ABD; /* Azul cielo más oscuro */
+  background-color: #357abd; /* Azul cielo más oscuro */
 }
 
 /* Formulario */
@@ -389,7 +372,8 @@ input:focus {
   border-radius: 5px;
   font-size: 16px;
   margin-bottom: 15px;
-  transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  transition: border-color var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
 }
 
 .form-card input:focus {
@@ -422,7 +406,8 @@ footer {
   justify-content: center;
   text-decoration: none;
   opacity: 0;
-  transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
+  transition: opacity var(--transition-speed) ease,
+    transform var(--transition-speed) ease;
 }
 
 .back-to-top.visible {

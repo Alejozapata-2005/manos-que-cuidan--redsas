@@ -26,67 +26,7 @@
   --font-size-h3: 20px;
 }
 
-/* Soporte para modo oscuro */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #1a1a1a;
-    --text-color: #ddd;
-    --light-text: #aaa;
-    --shadow-color: rgba(255, 255, 255, 0.1);
-    --white: #252525;
-  }
-  body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  .top-bar,
-  .sidebar,
-  footer,
-  .login-card,
-  .register-card {
-    background-color: #121212;
-  }
-  .main-header,
-  .card,
-  .form-card,
-  .profile-container,
-  .styled-table,
-  .chat-box,
-  .chat-messages {
-    background: #252525;
-  }
-  .form-card input,
-  .form-card textarea,
-  .form-card select,
-  .profile-container input,
-  .profile-container select,
-  .chat-form input,
-  .login-card input,
-  .register-card input,
-  .register-card select {
-    background-color: #333;
-    border-color: #444;
-    color: var(--text-color);
-  }
-  .styled-table th {
-    background-color: #333;
-  }
-  .stars span {
-    color: #555;
-  }
-  .stars span.active {
-    color: #f1c40f; /* Amarillo oscuro para modo oscuro */
-  }
-  .msg.admin {
-    background-color: #333;
-  }
-  .msg.user {
-    background-color: #357abd; /* Azul cielo más oscuro */
-  }
-  .extra-links a {
-    color: var(--accent-color);
-  }
-}
+/* Modo oscuro eliminado */
 
 /* Reset y estilos base */
 * {
